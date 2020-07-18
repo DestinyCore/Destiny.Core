@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Destiny.Core.Api", "src\Destiny.Core.Api\Destiny.Core.Api.csproj", "{73EB0CDE-9572-43D2-AB3B-A7D8891749CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Destiny.Core.Modules", "src\Destiny.Core.Modules\Destiny.Core.Modules.csproj", "{6608C65F-4DF6-43F1-B0C7-AEE5BE28E7B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73EB0CDE-9572-43D2-AB3B-A7D8891749CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73EB0CDE-9572-43D2-AB3B-A7D8891749CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73EB0CDE-9572-43D2-AB3B-A7D8891749CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73EB0CDE-9572-43D2-AB3B-A7D8891749CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6608C65F-4DF6-43F1-B0C7-AEE5BE28E7B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6608C65F-4DF6-43F1-B0C7-AEE5BE28E7B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6608C65F-4DF6-43F1-B0C7-AEE5BE28E7B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6608C65F-4DF6-43F1-B0C7-AEE5BE28E7B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {660C78F5-53F0-4D0A-9332-9D0BA3153292}
+	EndGlobalSection
+EndGlobal
