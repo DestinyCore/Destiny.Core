@@ -4,5 +4,15 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Caching.CSRedis" Version="3.6.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Connections" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Destiny.Core.Modules\Destiny.Core.Modules.csproj" />
+  </ItemGroup>
+
 
 </Project>
