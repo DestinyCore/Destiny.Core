@@ -9,12 +9,12 @@ namespace Destiny.Core.Modules
     {
 
 
-         public ApplicationContext(IApplicationBuilder application, IServiceProvider serviceProvider) {
-            Application = application;
+         public ApplicationContext(IServiceProvider serviceProvider) {
+      
             ServiceProvider = serviceProvider;
 
         }
-        public IApplicationBuilder Application { get; }
+        //public IApplicationBuilder Application { get; }
 
         public IServiceProvider ServiceProvider { get; }
     }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
@@ -32,6 +33,9 @@ namespace Destiny.Core.Modules
             var options = new StartupModulesOptions();
             configure(options);
             services.AddSingleton(options);
+            var obj = new Objects<IApplicationBuilder>();
+            services.Add(ServiceDescriptor.Singleton(typeof(Objects<IApplicationBuilder>), obj));
+            services.Add(ServiceDescriptor.Singleton(typeof(IObjects<IApplicationBuilder>), obj));
             if (options.Modules.Count == 0)
             {
 
@@ -47,9 +51,9 @@ namespace Destiny.Core.Modules
 
         public static IApplicationBuilder InitializeApplication(this IApplicationBuilder builder)
         {
-        
+            builder.ApplicationServices.GetRequiredService<Objects<IApplicationBuilder>>().Value = builder;
             var runner = builder.ApplicationServices.GetRequiredService<StartupModuleRunner>();
-            runner.Configure(builder);
+            runner.Configure(builder.ApplicationServices);
             return builder;
         }
     }

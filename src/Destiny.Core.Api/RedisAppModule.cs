@@ -1,4 +1,5 @@
 ﻿using Destiny.Core.Modules;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,11 +15,12 @@ namespace Destiny.Core.Api
     {
         public override void Configure(ApplicationContext context)
         {
-         
+           var app=  context.ServiceProvider.GetRequiredService<Objects<IApplicationBuilder>>();
         }
 
         public override void ConfigureServices(ConfigureServicesContext context)
         {
+           
             var con= context.Services.BuildServiceProvider().GetRequiredService<IConfiguration>();
              var redis=  con.GetSection("Redis").Value;
             var basePath = Microsoft.DotNet.PlatformAbstractions.ApplicationEnvironment.ApplicationBasePath; //获取项目路径

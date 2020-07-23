@@ -24,17 +24,17 @@ namespace Destiny.Core.Modules
         public void ConfigureServices(IServiceCollection services)
         {
             var ctx = new ConfigureServicesContext(services);
-
+            services.AddSingleton(ctx);
             foreach (var cfg in _options.Modules)
             {
-                cfg.ConfigureServices( ctx);
+                cfg.ConfigureServices(ctx);
             }
         }
 
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IServiceProvider service)
         {
-            using var scope = app.ApplicationServices.CreateScope();
-            var ctx = new ApplicationContext(app, scope.ServiceProvider);
+            using var scope = service.CreateScope();
+            var ctx = new ApplicationContext(scope.ServiceProvider);
             foreach (var cfg in _options.Modules)
             {
                 cfg.Configure(ctx);

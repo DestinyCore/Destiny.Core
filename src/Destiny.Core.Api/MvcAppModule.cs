@@ -22,7 +22,7 @@ namespace Destiny.Core.Api
         public void Configure(ApplicationContext context)
         {
         
-            var app = context.Application;
+            var app = context.ServiceProvider.GetRequiredService<IObjects<IApplicationBuilder>>()?.Value;
             app.UseRouting();
 
             app.UseAuthorization();
