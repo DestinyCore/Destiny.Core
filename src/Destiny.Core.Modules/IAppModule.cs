@@ -15,5 +15,9 @@ namespace Destiny.Core.Modules
 
 
         void Configure(ApplicationContext context);
+
+        Type[] GetDependedTypes(Type moduleType = null);
+
+
     }
 }

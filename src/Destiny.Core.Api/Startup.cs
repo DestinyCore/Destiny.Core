@@ -29,7 +29,7 @@ namespace Destiny.Core.Api
         {
 
 
-            services.AddApplication();
+            services.AddApplication<MvcAppModule>();
             //services.AddControllers();
  
         }

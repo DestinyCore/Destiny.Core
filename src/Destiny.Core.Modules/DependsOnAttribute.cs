@@ -7,7 +7,7 @@ namespace Destiny.Core.Modules
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
    public class DependsOnAttribute : Attribute, IDependedTypesProvider
     {
-        public Type[] DependedTypes { get; }
+        private Type[] DependedTypes { get; }
 
         public DependsOnAttribute(params Type[] dependedTypes)
         {
@@ -20,7 +20,7 @@ namespace Destiny.Core.Modules
     }
 
     public interface IDependedTypesProvider
-    { 
-    
+    {
+        Type[] GetDependedTypes();
     }
 }
