@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Destiny.Core.Api", "src\Destiny.Core.Api\Destiny.Core.Api.csproj", "{73EB0CDE-9572-43D2-AB3B-A7D8891749CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Destiny.Core.Api", "src\Destiny.Core.Api\Destiny.Core.Api.csproj", "{73EB0CDE-9572-43D2-AB3B-A7D8891749CD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Destiny.Core.Modules", "src\Destiny.Core.Modules\Destiny.Core.Modules.csproj", "{6608C65F-4DF6-43F1-B0C7-AEE5BE28E7B9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "src\ConsoleApp1\ConsoleApp1.csproj", "{041EAEC5-9BBF-4C8C-AA09-B13BAA03E6DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Destiny.Core.Modules", "src\Destiny.Core.Modules\Destiny.Core.Modules.csproj", "{6608C65F-4DF6-43F1-B0C7-AEE5BE28E7B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{6608C65F-4DF6-43F1-B0C7-AEE5BE28E7B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6608C65F-4DF6-43F1-B0C7-AEE5BE28E7B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6608C65F-4DF6-43F1-B0C7-AEE5BE28E7B9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{041EAEC5-9BBF-4C8C-AA09-B13BAA03E6DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{041EAEC5-9BBF-4C8C-AA09-B13BAA03E6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{041EAEC5-9BBF-4C8C-AA09-B13BAA03E6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{041EAEC5-9BBF-4C8C-AA09-B13BAA03E6DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

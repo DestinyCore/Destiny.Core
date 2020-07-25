@@ -11,10 +11,12 @@ namespace Destiny.Core.Modules
  public static   class IServiceCollectionExtensions
     {
 
-        public static IServiceCollection AddApplication<T>(this IServiceCollection services) where T : IAppModule =>
-             AddApplication(services, options => options.DiscoverStartupModules<T>());
+        public static IServiceCollection AddApplication(this IServiceCollection services) =>
+             AddApplication(services, options => options.DiscoverStartupModules());
 
 
+        public static IServiceCollection AddApplication(this IServiceCollection services, params Assembly[] assemblies) =>
+           AddApplication(services, options => options.DiscoverStartupModules(assemblies));
 
         public static IServiceCollection AddApplication(this IServiceCollection services, Action<StartupModulesOptions> configure)
         {
