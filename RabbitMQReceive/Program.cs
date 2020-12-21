@@ -9,7 +9,9 @@ namespace RabbitMQReceive
     {
         static void Main(string[] args)
         {
-            var factory = new ConnectionFactory() { HostName = "47.100.213.49", UserName = "DestinyMQ", Password = "P@ssW0rd", Port = 5672 };
+
+
+            var factory = new ConnectionFactory() { HostName = "xx", UserName = "DestinyMQ", Password = "ss", Port = 5672 };
             using (var connection = factory.CreateConnection())
             {
                 using (var channel = connection.CreateModel())
