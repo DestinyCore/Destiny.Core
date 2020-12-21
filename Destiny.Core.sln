@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Destiny.Core.Api", "src\Destiny.Core.Api\Destiny.Core.Api.csproj", "{73EB0CDE-9572-43D2-AB3B-A7D8891749CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Destiny.Core.Api", "src\Destiny.Core.Api\Destiny.Core.Api.csproj", "{73EB0CDE-9572-43D2-AB3B-A7D8891749CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Destiny.Core.Modules", "src\Destiny.Core.Modules\Destiny.Core.Modules.csproj", "{6608C65F-4DF6-43F1-B0C7-AEE5BE28E7B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Destiny.Core.Modules", "src\Destiny.Core.Modules\Destiny.Core.Modules.csproj", "{6608C65F-4DF6-43F1-B0C7-AEE5BE28E7B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQDemo", "RabbitMQDemo", "{9DC1B0E0-8157-44FF-8927-5C3DCB080B23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQSend", "RabbitMQSend\RabbitMQSend.csproj", "{2454B8B1-78AB-4CB6-9E9E-EBB93D1217BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQReceive", "RabbitMQReceive\RabbitMQReceive.csproj", "{2412231D-27D2-4ED4-9B10-CA6DC936DD14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +27,21 @@ Global
 		{6608C65F-4DF6-43F1-B0C7-AEE5BE28E7B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6608C65F-4DF6-43F1-B0C7-AEE5BE28E7B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6608C65F-4DF6-43F1-B0C7-AEE5BE28E7B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2454B8B1-78AB-4CB6-9E9E-EBB93D1217BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2454B8B1-78AB-4CB6-9E9E-EBB93D1217BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2454B8B1-78AB-4CB6-9E9E-EBB93D1217BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2454B8B1-78AB-4CB6-9E9E-EBB93D1217BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2412231D-27D2-4ED4-9B10-CA6DC936DD14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2412231D-27D2-4ED4-9B10-CA6DC936DD14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2412231D-27D2-4ED4-9B10-CA6DC936DD14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2412231D-27D2-4ED4-9B10-CA6DC936DD14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2454B8B1-78AB-4CB6-9E9E-EBB93D1217BD} = {9DC1B0E0-8157-44FF-8927-5C3DCB080B23}
+		{2412231D-27D2-4ED4-9B10-CA6DC936DD14} = {9DC1B0E0-8157-44FF-8927-5C3DCB080B23}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {660C78F5-53F0-4D0A-9332-9D0BA3153292}

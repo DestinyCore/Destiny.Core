@@ -2,3 +2,7 @@
 /src/Destiny.Core.Api/obj
 /src/Destiny.Core.Modules/bin
 /src/Destiny.Core.Modules/obj
+/RabbitMQReceive/bin
+/RabbitMQReceive/obj
+/RabbitMQSend/bin
+/RabbitMQSend/obj
